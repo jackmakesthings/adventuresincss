@@ -1,0 +1,49 @@
+
+body { font-size: 62.5%; }
+
+#container { font-size:100%; margin:auto; width:96em; }
+
+#logo {
+  width:19.3em;
+  margin:1em;
+  display:block;
+  text-align:center;
+  }
+
+
+#products { display:block; }
+
+#products {
+  display:block;
+  overflow:hidden;
+  margin:auto;
+  width:100%;
+  word-spacing: 0; letter-spacing:0;
+}
+
+  .product {
+    list-style:none;
+    display:inline-block;
+    vertical-align: top;
+    margin:1em -.4em -.4em 1em;
+  }
+
+
+@media screen and (max-width:48em) {}
+
+
+@media only screen and (min-width:76.8em) {
+/*and (max-width: 59.9em) {*/
+  #container { }
+
+}
+
+@media screen and (min-width:96em) {
+
+  #container {
+    width:96em;
+    margin:auto;
+    text-align:center;
+  }
+
+}

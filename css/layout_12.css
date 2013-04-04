@@ -1,0 +1,49 @@
+
+body { font-size: 62.5%; }
+#container { font-size:100%; }
+#products { display:block; }
+
+.product {
+  list-style:none;
+  word-spacing: normal;
+  letter-spacing: normal;
+  display:inline-block;
+  vertical-align: top;
+  margin:0 1em 1em 0;
+}
+
+
+@media screen and (max-width:47.9em) {}
+
+
+@media only screen and (min-width:64em) {
+/*and (max-width: 59.9em) {*/
+  #container { }
+
+    #products {
+    display:block;
+    overflow:hidden;
+    margin:auto;
+    width:100%; 
+        }
+
+
+
+}
+
+@media screen and (min-width:80em) {
+
+  #container {
+    width:80em;
+    margin:auto;
+    text-align:center;
+  }
+
+
+
+    #products li a {}
+
+    #products img {
+    }
+
+}

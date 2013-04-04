@@ -1,0 +1,76 @@
+body { font-size:1em; }
+#container { margin:auto; }
+
+/*==========  Header area  ==========*/
+
+#logo {
+  width:19.3em;
+  margin:1em;
+  display:block;
+  text-align:center;
+  }
+
+/*==========  Product grid  ==========*/
+
+#products {
+  display:block;
+  overflow:hidden;
+  margin:auto;
+}
+
+  #products > li {
+    list-style:none;
+    text-align:center;
+    display:inline-block;
+    vertical-align: top;
+    height:14.5em;
+    width: 14.5em;
+    margin:0 -.25em .625em .625em;
+  }
+
+/*==========  Breakpoint 1 - 30.9em /  ==========*/
+
+@media screen and (max-width:30.9em) {
+
+  #container { width:100%; }
+
+  #products > li { 
+    display:block;
+    margin:0 .625em .625em .625em;
+    width:auto;
+    }
+}
+
+/*==========  Breakpoint 2 - 48em  ==========*/
+
+@media screen and (min-width:30.9em) and (max-width:47.9em) {
+
+  #container {
+    width:30.9em;
+  }
+}
+
+/*==========  Breakpoint 3 - 60em  ==========*/
+
+@media screen and (min-width:46em) and (max-width:60em) {
+/*and (max-width: 59.9em) {*/
+  #container {
+    width:46em;
+  }
+}
+
+/*==========  60em and up  ==========*/
+
+@media screen and (min-width:60em) {
+
+  #container {
+    width:61em;
+    margin:auto;
+    text-align:left;
+  }
+
+    #products li a {
+      display: block;
+    }
+
+}
