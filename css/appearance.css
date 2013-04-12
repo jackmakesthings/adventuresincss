@@ -32,10 +32,17 @@ body {
   background:#fff;
 }
 
+.logo, .main-nav { background:#aee }
+
+.main-nav a {
+  text-transform:uppercase;
+  font-size:.75em;
+}
+
 #products {
   background:#eee;
 }
 
-#products li { 
+#products li {
   background:#ddd;
   }

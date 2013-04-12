@@ -3,16 +3,44 @@ body { font-size:1em; }
 
 /*==========  Header area  ==========*/
 
-#logo {
-  width:19.3em;
-  margin:1em;
-  display:block;
+.logo, .main-nav {
+  display:inline-block;
+  vertical-align:top;
+  margin:.625em;
   text-align:center;
+  height:45px;
+    }
+
+.logo {
+  width:14.5em;
+  background:#0eafff;
   }
+
+.main-nav {
+  margin: .625em 0 .625em -0.25em;
+  max-width:44.75em;
+  display:inline-table;
+}
+
+  .main-nav ul {
+    display:inline-table;
+    /*width:100%; */
+    height:100%;
+  }
+
+    .main-nav li {
+      display:table-cell;
+      vertical-align:middle;
+    }
+
+      .main-nav a {
+        display:block;
+      }
 
 /*==========  Product grid  ==========*/
 
 #products {
+  clear:both;
   display:block;
   overflow:hidden;
   margin:auto;
@@ -34,7 +62,26 @@ body { font-size:1em; }
 
   #container { width:100%; }
 
-  #products > li { 
+  #header {
+    display:table;
+    width:100%;
+    padding:0.625em;
+    }
+
+    .logo, .main-nav {
+      display:table-cell;
+    }
+
+      .main-nav ul,
+      .main-nav li {
+        display:block;
+      }
+
+      .main-nav ul {
+        position:absolute;
+      }
+
+  #products > li {
     display:block;
     margin:0 .625em .625em .625em;
     width:auto;
@@ -43,11 +90,18 @@ body { font-size:1em; }
 
 /*==========  Breakpoint 2 - 48em  ==========*/
 
-@media screen and (min-width:30.9em) and (max-width:47.9em) {
+@media screen and (min-width:30.9em) and (max-width:45em) {
 
   #container {
-    width:30.9em;
+    width:31em;
   }
+
+  .logo, .main-nav {
+    display:block;
+    margin:.625em;
+    width:auto;
+  }
+
 }
 
 /*==========  Breakpoint 3 - 60em  ==========*/
@@ -57,20 +111,36 @@ body { font-size:1em; }
   #container {
     width:46em;
   }
+
+  .main-nav { min-width:29.6em; }
+
+  /* Just for using two top navs */
+/*  .main-nav {
+    width:35em;
+    display:table;
+  }
+
+  .main-nav ul {
+    }
+
+    .logo { width:7em; float:left; }
+    .logo img { max-width:100%; }*/
+
+    .logo { display:none; }
+    .main-nav { margin:0.625em; width:100%; }
+    .main-nav ul { display:inline-block; width:auto; }
 }
 
 /*==========  60em and up  ==========*/
 
-@media screen and (min-width:60em) {
+@media screen and (min-width:61.1em) {
 
   #container {
-    width:61em;
+    width:61.1em;
     margin:auto;
     text-align:left;
   }
 
-    #products li a {
-      display: block;
-    }
+  .main-nav { min-width: 44.75em; }
 
 }

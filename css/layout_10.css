@@ -3,12 +3,6 @@ body { font-size: 62.5%; }
 
 #container { font-size:100%; margin:auto; width:96em; }
 
-#logo {
-  width:19.3em;
-  margin:1em;
-  display:block;
-  text-align:center;
-  }
 
 
 #products { display:block; }
