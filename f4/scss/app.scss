@@ -1,0 +1,41 @@
+.items-sm { 
+	@include block-grid(4, $block-grid-default-spacing, true);
+}
+
+.items-med {
+	@include block-grid(2, $block-grid-default-spacing, true);
+}
+
+.item { 
+	
+}
+
+.item > a {
+	text-align:center;
+	background: #cacaca;
+	display:block;
+	padding:5px;
+	border:1px solid #eee;
+}
+
+.item img {
+	border:#aaa;
+	border-width:($block-grid-default-spacing / 2);
+}
+
+#sidebar {
+}
+
+.content {
+	background:#ccc;
+}
+
+#main, .items-sm {
+	background:#ddd;
+}
+
+#wrap { background: #bbb; }
+
+#main > ul  { 
+	margin-top:.625em; 
+}
